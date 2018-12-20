@@ -14,6 +14,8 @@ public class StationsPageTests extends BaseTests {
         homepage.waitForHomePageLoad();
         // go to Stations page
         StationsPage stationspage = homepage.clickStations();
+        //wait for Stations Page to load
+        stationspage.waitForStationsPageToLoad();
         // check that there are 17 network station logos
         Assert.assertEquals(17, stationspage.countRadioStations());
     }

@@ -16,9 +16,8 @@ public class StationsPage extends BasePage {
     // page elements
     By bbcRadioOneLogo = By.xpath("//img[@alt=\'BBC Radio 1\']");
 
-
     // page methods
-    public void waitForLogo(){
+    public void waitForStationsPageToLoad(){
         waitVisibility(driver.findElement(bbcRadioOneLogo));
     }
 

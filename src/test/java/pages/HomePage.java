@@ -14,9 +14,10 @@ public class HomePage extends BasePage {
     String baseURL = "https://www.bbc.co.uk/sounds";
 
     //page elements
+
     By radioOneLogo = By.xpath("//*[name()=\'title\' and text()=\'Radio 1\']/parent::*[name()=\'svg\']");
     By radioTwoLogo = By.xpath("//*[name()=\'title\' and text()=\'Radio 2\']/parent::*[name()=\'svg\']");
-    By listenLink = By.xpath("//span[text()=\'Listen\']");
+    By listenLink = By.id("sn__listen-text");
     By stationsLink = By.xpath("//header//span[text()=\'Stations\']");
     By categoriesHipHop = By.xpath("//h2[text()=\'Hip Hop\']");
 

@@ -21,7 +21,7 @@ public class HomePageTests extends BaseTests {
         Assert.assertEquals(true, homepage.radioOneLogoDisplayed());
         Assert.assertEquals(true, homepage.radioTwoLogoDisplayed());
         // go to Stations page
-        StationsPage sp = homepage.clickStations();
+        homepage.clickStations();
         // check logos are not present
         Assert.assertEquals(false, homepage.radioOneLogoDisplayed());
         Assert.assertEquals(false, homepage.radioTwoLogoDisplayed());

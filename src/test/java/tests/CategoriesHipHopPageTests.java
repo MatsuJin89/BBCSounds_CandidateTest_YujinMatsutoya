@@ -14,6 +14,8 @@ public class CategoriesHipHopPageTests extends BaseTests{
         homepage.waitForHomePageLoad();
         // go to Categories: Hip Hop Page
         CategoriesHipHopPage hiphoppage = homepage.clickCategoriesHipHop();
+        // wait for Categories: Hip Hop page to load
+        hiphoppage.waitForCategoriesHipHopPageToLoad();
         // check that Sort by Popular is selected
         Assert.assertEquals(true,hiphoppage.sortPopularSelected());
         // click Sort by Latest
