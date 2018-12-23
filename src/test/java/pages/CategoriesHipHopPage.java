@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class CategoriesHipHopPage extends BasePage {
 
@@ -11,7 +10,7 @@ public class CategoriesHipHopPage extends BasePage {
 
 
     // page elements
-    By categoriesTitle = By.xpath("//a[text()=\'Categories:\']");
+    By categoriesTitle = By.xpath("//a[contains(text(),\'Categories\')]");
     By sortOrderPopular = By.xpath("//a[@data-istats-sort_order_criteria = \'popular\']/../..");
     By sortOrderLatest = By.xpath("//a[@data-istats-sort_order_criteria = \'-available_from_date\']/../..");
     By sortOrderAz = By.xpath("//a[@data-istats-sort_order_criteria = \'title\']/../..");

@@ -2,7 +2,6 @@ package tests;
 
 import org.junit.Assert;
 import org.junit.Test;
-import pages.StationsPage;
 
 public class HomePageTests extends BaseTests {
 
