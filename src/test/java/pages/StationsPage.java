@@ -26,4 +26,5 @@ public class StationsPage extends BasePage {
         List <WebElement> stations =  driver.findElements(By.xpath("//img[@class=\'station-logo\']"));
         return stations.size();
     }
+
 }

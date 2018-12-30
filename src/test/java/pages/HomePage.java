@@ -20,16 +20,17 @@ public class HomePage extends BasePage {
     By listenLink = By.id("sn__listen-text");
     By stationsLink = By.xpath("//header//span[text()=\'Stations\']");
     By categoriesHipHop = By.xpath("//h2[text()=\'Hip Hop\']");
+    By listenLiveHeader = By.xpath("//h2[text()=\'Listen Live\']");
 
     // page methods
     public HomePage openHomePage() {
         driver.get(baseURL);
-        waitVisibility(driver.findElement(listenLink));
+        waitVisibility(driver.findElement(listenLiveHeader));
         return this;
     }
 
     public void waitForHomePageLoad() {
-        waitVisibility(driver.findElement(listenLink));
+        waitVisibility(driver.findElement(listenLiveHeader));
     }
 
     public HomePage clickListen() {
@@ -51,5 +52,9 @@ public class HomePage extends BasePage {
 
     public boolean radioTwoLogoDisplayed() {
         return driver.findElements(radioTwoLogo).size() > 0;
+    }
+
+    public boolean listenLiveHeaderDisplayed() {
+        return driver.findElements(listenLiveHeader).size() > 0;
     }
 }
